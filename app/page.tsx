@@ -1,5 +1,6 @@
 import Banner from "./components/banner/banner";
 import CategoryList from "./components/categoryList/categoryList";
+import ProductList from "./components/productCard/productList";
 import Testimonials from "./components/testimonials/testimonials";
 
 export default function Home() {
@@ -57,10 +58,11 @@ export default function Home() {
   return (
     <>
       <Banner images={images} />
-      <CategoryList categoryList={categoryList} />
-      <CategoryList categoryList={categoryList} />
-      <CategoryList categoryList={categoryList} />
-      <CategoryList categoryList={categoryList} />
+      <div>
+        <CategoryList categoryList={categoryList} />
+        <ProductList categoryId={"677"} />
+        <ProductList categoryId={"678"} />
+      </div>
       <Testimonials />
     </>
   );
