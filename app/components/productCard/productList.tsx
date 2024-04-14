@@ -151,7 +151,7 @@ const diffusersList = {
   ],
 };
 
-const getProductListByCategoryId = (categoryId) => {
+const getProductListByCategoryId = (categoryId: any) => {
   switch (categoryId) {
     case "677": {
       return giftList;
@@ -162,7 +162,7 @@ const getProductListByCategoryId = (categoryId) => {
   }
 };
 
-function ProductList(props) {
+function ProductList(props: any) {
   const { categoryId } = props;
   const productList = getProductListByCategoryId(categoryId);
   return (

@@ -1,16 +1,19 @@
 import React from "react";
 import { Facebook, Instagram } from "./icons";
 
-function IconsWrapper(props) {
+interface IconsProps {
+  width: number;
+  height: number;
+  fill?: string;
+  name: string;
+}
+
+function IconsWrapper(props: IconsProps) {
   const { name, width, height } = props;
   return (
     <div>
-      {props.name == "Facebook" && (
-        <Facebook name={name} width={width} height={height} />
-      )}
-      {props.name == "Instagram" && (
-        <Instagram name={name} width={width} height={height} />
-      )}
+      {props.name == "Facebook" && <Facebook width={width} height={height} />}
+      {props.name == "Instagram" && <Instagram width={width} height={height} />}
     </div>
   );
 }

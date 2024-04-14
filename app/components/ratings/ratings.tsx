@@ -1,6 +1,6 @@
 import React from "react";
 
-const Ratings = ({ rating }) => {
+const Ratings = ({ rating }: any) => {
   const renderStars = () => {
     const stars = [];
     const roundedRating = Math.round(rating.ratings * 2) / 2; // Round to nearest half star

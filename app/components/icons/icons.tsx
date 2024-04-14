@@ -1,6 +1,11 @@
 import React from "react";
+interface IconsProps {
+  width: number;
+  height: number;
+  fill?: string;
+}
 
-export function Facebook(props) {
+export function Facebook(props: IconsProps) {
   const { width, height, fill } = props;
   return (
     <svg
@@ -15,7 +20,7 @@ export function Facebook(props) {
   );
 }
 
-export function Instagram(props) {
+export function Instagram(props: IconsProps) {
   const { width, height, fill } = props;
   return (
     <svg

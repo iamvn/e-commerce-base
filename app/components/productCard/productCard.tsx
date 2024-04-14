@@ -1,7 +1,7 @@
 import React from "react";
 import Ratings from "../ratings/ratings";
 
-function ProductCard(props) {
+function ProductCard(props: any) {
   const { productDetails } = props;
   return (
     <div className="lg:w-1/4 md:w-1/2 p-4 w-full">
